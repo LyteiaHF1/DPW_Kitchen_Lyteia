@@ -12,4 +12,18 @@ data['grade_level'] = input("What Grade Are You In")
 data['time'] = input("How Many Years You Been Here")
 data['grades'] = []
 
+#Get The Grades
+for i in range(0,1000000)
+    if i == 0:
+    grade = input("Grades need to be between 0-4 ")
+    else = input("Your grades are" + grade)
+
+    if grade == 'n/a':
+       break
+    else: data['grades'].append(grade) # else add grade to grades
+ data['type'] = 0
+ #for number in data dictionary grades
+ for number in ['grades']
+
+
 
