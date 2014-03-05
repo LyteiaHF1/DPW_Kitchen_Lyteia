@@ -23,7 +23,11 @@ for i in range(0,1000000)
     else: data['grades'].append(grade) # else add grade to grades
  data['type'] = 0
  #for number in data dictionary grades
- for number in ['grades']
+ for number in ['grades']:
+ #if number is greater than data['type']
+     if number > data['type']:
+     #data['type'] equals number
+        data['type'] = number
 
 
 
