@@ -13,17 +13,18 @@ data['time'] = input("How Many Years You Been Here")
 data['grades'] = []
 
 #Get The Grades
-for i in range(0,1000000)
+for i in range(0,1000000):
     if i == 0:
-    grade = input("Grades need to be between 0-4 ")
-    else = input("Your grades are" + grade)
+        grade = input("Grades need to be between 0-4 ")
+    else:
+        grade = input()
 
     if grade == 'n/a':
        break
     else: data['grades'].append(grade) # else add grade to grades
- data['type'] = 0
+data['type'] = 0
  #for number in data dictionary grades
- for number in ['grades']:
+for number in ['grades']:
  #if number is greater than data['type']
      if number > data['type']:
      #data['type'] equals number
@@ -50,7 +51,14 @@ total = 0;
 #for every grade in grades
 for g in data['grades']:
 #add the g added to the total
-total = total + g
-amount = amount + 1
+    total = total + g
+    amount = amount + 1
 #gpa = total grades divided by amount
 data['gpa'] = total/amount
+
+message = '''
+Hey My Name Is {data[name]} I Am A {info[grade_level]} at {info[school]}, Ive been going here for {data[time]} years.
+My GPA Is A {data[gpa]} School isnt the hardest thing in the world but its not the easiest either
+'''
+message.format(**locals())
+print message
