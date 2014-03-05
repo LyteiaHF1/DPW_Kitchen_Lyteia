@@ -43,3 +43,14 @@ elif data['type']==1:
 else:
 #Else data equals F
     data['let']='F'
+
+data['gpa'] = 0;
+amount = 0;
+total = 0;
+#for every grade in grades
+for g in data['grades']:
+#add the g added to the total
+total = total + g
+amount = amount + 1
+#gpa = total grades divided by amount
+data['gpa'] = total/amount
