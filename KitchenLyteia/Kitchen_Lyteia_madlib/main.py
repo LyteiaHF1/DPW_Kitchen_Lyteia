@@ -28,6 +28,18 @@ for i in range(0,1000000)
      if number > data['type']:
      #data['type'] equals number
         data['type'] = number
-
-
-
+#if data type is equal to  4 data equals A
+if data['type']==4:
+    data['let']='A'
+#if data type is equal to  3 data equals B
+elif data['type']==3:
+    data['let']='B'
+#if data type is equal to  2 data equals C
+elif data['type']==2:
+    data['let']='C'
+#if data type is equal to  1 data equals D
+elif data['type']==1:
+    data['let']='D'
+else:
+#Else data equals F
+    data['let']='F'
