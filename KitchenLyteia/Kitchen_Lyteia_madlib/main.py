@@ -4,24 +4,24 @@ Lyteia Kitchen
 Lab 1
 '''
 #Dictionary Set Up
-data = dict ()
+data = dict()
 
-data['name'] = input("Whats your name")
-data['school'] = input("What School You Go To")
-data['grade_level'] = input("What Grade Are You In")
-data['time'] = input("How Many Years You Been Here")
+data['name'] = input("Whats your name?:" )
+data['school'] = input("What School You Go To?:" )
+data['grade_level'] = input("What Grade Are You In?:" )
+data['time'] = input("How Many Years You Been Here?:" )
 data['grades'] = []
 
 #Get The Grades
 for i in range(0,1000000):
     if i == 0:
-        grade = input("Grades need to be between 0-4 ")
+        grade = input("Grades need to be between 0-4 add # after grades ")
     else:
-        grade = input()
+        grade = input(''' ''')
 
-    if grade == 'n/a':
+    if grade == '#':
        break
-    else: data['grades'].append(grade) # else add grade to grades
+    else: data['grades'].append(grade) #else add grade to grades
 data['type'] = 0
  #for number in data dictionary grades
 for number in ['grades']:
@@ -44,10 +44,13 @@ elif data['type']==1:
 else:
 #Else data equals F
     data['let']='F'
+def calcGPA(t,a):
+    gpa = t / a
+    return gpa
 
-data['gpa'] = 0;
-amount = 0;
-total = 0;
+data['gpa'] = 0
+amount = 0
+total = 0
 #for every grade in grades
 for g in data['grades']:
 #add the g added to the total
@@ -57,8 +60,8 @@ for g in data['grades']:
 data['gpa'] = total/amount
 
 message = '''
-Hey My Name Is {data[name]} I Am A {info[grade_level]} at {info[school]}, Ive been going here for {data[time]} years.
-My GPA Is A {data[gpa]} School isnt the hardest thing in the world but its not the easiest either
+Hey My Name Is {data[name]}, I Am A {data[grade_level]} at {data[school]}, Ive been going here for {data[time]} years.
+My GPA Is A {data[gpa]} School i'snt the hardest thing in the world but its not the easiest either !
 '''
-message.format(**locals())
+message = message.format(**locals())
 print message
