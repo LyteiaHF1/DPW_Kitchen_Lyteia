@@ -29,4 +29,4 @@ class Beer():
     print str(bottle) + "bottles of beer on the wall"+ str(bottle) + "bottles of beer... you take one down pass it around " + str(bottle -1) + "bottles of beer on the wall"
     while bottle > 1:
         bottle -=1
-        
+        print str(bottle) + "bottles of beer on the wall"+ str(bottle) + "bottles of beer... you take one down pass it around " + str(bottle -1) + "bottles of beer on the wall"
