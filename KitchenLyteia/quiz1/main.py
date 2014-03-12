@@ -25,4 +25,6 @@ def calcArea(w, h):
         area = calcArea(height,width)
 
 class Beer():
-    bottles  = 100
+    bottle  = 100
+    print str(bottle) + "bottles of beer on the wall"+ str(bottle) + "bottles of beer... you take one down pass it around " + str(bottle -1) + "bottles of beer on the wall"
+    
