@@ -15,7 +15,7 @@ def calcArea(w, h):
     area = calcArea(height, width)
 
     if height == width:
-        print "The area of fyour square is" + str(area)+ "square feet."
+        print "The area of your square is" + str(area)+ "square feet."
     else:
         print "The area of your rectangle is" + str(area)+ "square feet."
 
@@ -23,3 +23,6 @@ def calcArea(w, h):
         width = 20
 
         area = calcArea(height,width)
+
+class Beer():
+    bottles  = 100
