@@ -3,12 +3,14 @@ Lyteia Kitchen
 3/11/14
 Quiz1
 '''
+#class for Area
 class CalcArea():
     width = 15
     height = 15
 
 
 def calcArea(w, h):
+    #area = h times width
     area = h * w
     return area
 
@@ -23,7 +25,7 @@ def calcArea(w, h):
         width = 20
 
         area = calcArea(height,width)
-
+#class for Beer
 class Beer():
     bottle  = 100
     print str(bottle) + "bottles of beer on the wall"+ str(bottle) + "bottles of beer... you take one down pass it around " + str(bottle -1) + "bottles of beer on the wall"
