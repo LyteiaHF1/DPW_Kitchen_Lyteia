@@ -20,7 +20,6 @@ else:
 
 area = calcArea(height,width)
 
-#class for Beer
 class Beer():
     bottle  = 100
     print str(bottle) + " bottles of beer on the wall "+ str(bottle) + " bottles of beer... you take one down pass it around " + str(bottle -1) + " bottles of beer on the wall"
