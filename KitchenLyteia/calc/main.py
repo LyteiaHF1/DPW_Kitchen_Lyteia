@@ -96,6 +96,9 @@ class MainHandler(webapp2.RequestHandler):
         </div>
         '''
 
+         finish = finish.format(**locals())
+         return finish
+
 
 
  #Objects
