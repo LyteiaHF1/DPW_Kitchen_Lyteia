@@ -19,6 +19,7 @@ class Page():
             </header>
             <div id="main">
         '''
+
         self.__form = '''
             <form action="" method="GET" name="shoes" id="buttons">
                 <p><a href="/?heat=1" name="heat" id="airJ">Air Jordan</a></p>
@@ -28,12 +29,14 @@ class Page():
                 <p><a href="/?heat=5" name="heat" id="kobe">Kobes</a></p>
             </div>
         '''
+
         self.__footer = '''
             </div>
         </div>
     </body>
 </html>
         '''
+
 
     def header(self):
         return self.__header
@@ -43,4 +46,3 @@ class Page():
 
     def footer(self):
         return self.__footer
-

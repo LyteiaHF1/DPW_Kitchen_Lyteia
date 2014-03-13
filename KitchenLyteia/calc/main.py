@@ -29,7 +29,7 @@ class MainHandler(webapp2.RequestHandler):
         nfp.limit = 1 #pairs
         nfp.img = "http://upload.wikimedia.org/wikipedia/en/3/37/Jumpman_logo.svg"
 
-          #nikeFoampositeOne Shoe Instance
+        #nikeFoampositeOne Shoe Instance
 
         nfo = Shoe()
         nfo.name = 'Nike Foamposite One'
@@ -54,7 +54,7 @@ class MainHandler(webapp2.RequestHandler):
         kobe.limit = 4 #pairs
         kobe.img ="http://upload.wikimedia.org/wikipedia/en/3/37/Jumpman_logo.svg"
 
-         shoes = [
+        shoes = [
             airj,nfp,nfo,leb,kobe
         ]
 
@@ -62,11 +62,10 @@ class MainHandler(webapp2.RequestHandler):
         self.response.write(page.header())
         self.response.write(page.form())
         if self.request.GET:
-            heat = (int(self.request.GET['heat']))
+            heat = (int(self.request.GET['heat']))-1
             print heat
             self.response.write(self.html(shoes[heat]))
         self.response.write(page.footer())
-
 
      #function for html
     def html(self, obj):
@@ -75,7 +74,7 @@ class MainHandler(webapp2.RequestHandler):
         #total = price of object * limit of object + sales_tax
         total = obj.price * obj.limit+sales_tax
 
-         finish = '''
+        finish = '''
         <div id="finish">
             <h2>{obj.name}</h2>
             <img src="{obj.img}" alt="{obj.name}">
@@ -96,12 +95,11 @@ class MainHandler(webapp2.RequestHandler):
         </div>
         '''
 
-         finish = finish.format(**locals())
-         return finish
+        finish = finish.format(**locals())
+        return finish
 
 
-
- #Objects
+#Objects
 class Shoe(object):
     def __init__(self):
         self.name = ''
@@ -109,27 +107,28 @@ class Shoe(object):
         self.__limit = 0
         self.img = ''
 
+    #Getter for price
+    @property
+    def price(self):
+        return self.__price
 
-#Getter for price
-@property
-def price(self):
-    return self.__price
+
+    #Setter for price
+    @price.setter
+    def price(self, v):
+        self.__price = v
+
+    #Getter for limit
+    @property
+    def limit(self):
+        return self.__limit
+
+    #Setter for limit
+    @limit.setter
+    def limit(self, v):
+        self.__limit = v
 
 
-#Setter for price
-@price.setter
- def price(self, v):
-    self.__price = v
-
-#Getter for limit
-@property
-def limit(self):
-    return self.__limit
-
-#Setter for limit
-@limit.setter
-def limit(self, v):
-    self.__limit = v
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler)
