@@ -28,4 +28,10 @@ class Page():
                 <p><a href="/?heat=5" name="heat" id="kobe">Kobes</a></p>
             </div>
         '''
+        self.__footer = '''
+            </div>
+        </div>
+    </body>
+</html>
+        '''
 
