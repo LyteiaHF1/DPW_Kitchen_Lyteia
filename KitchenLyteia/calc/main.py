@@ -54,6 +54,16 @@ class MainHandler(webapp2.RequestHandler):
         kobe.limit = 4 #pairs
         kobe.img ="http://upload.wikimedia.org/wikipedia/en/3/37/Jumpman_logo.svg"
 
+         shoes = [
+            airj,nfp,nfo,leb,kobe
+        ]
+
+        #HTML
+        self.response.write(page.header())
+        self.response.write(page.form())
+        if self.request.GET:
+            pass
+
 
 
  #Objects
