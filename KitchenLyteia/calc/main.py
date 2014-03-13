@@ -110,6 +110,16 @@ class Shoe(object):
         self.img = ''
 
 
+#Getter for price
+@property
+def price(self):
+  return self.__price
+
+
+#Setter for price
+@price.setter
+ def price(self, v):
+   self.__price = v
 
 
 
