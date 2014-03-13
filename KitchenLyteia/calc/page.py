@@ -19,3 +19,13 @@ class Page():
             </header>
             <div id="main">
         '''
+        self.__form = '''
+            <form action="" method="GET" name="shoes" id="buttons">
+                <p><a href="/?heat=1" name="heat" id="airJ">Air Jordan</a></p>
+                <p><a href="/?heat=2" name="heat" id="nfp">Nike Foamposite Pro</a></p>
+                <p><a href="/?heat=3" name="heat" id="nfo">Nike Foamposite One</a></p>
+                <p><a href="/?heat=4" name="heat" id="leb">LeBrons</a></p>
+                <p><a href="/?heat=5" name="heat" id="kobe">Kobes</a></p>
+            </div>
+        '''
+
