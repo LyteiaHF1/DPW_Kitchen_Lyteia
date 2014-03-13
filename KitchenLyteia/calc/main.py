@@ -29,6 +29,32 @@ class MainHandler(webapp2.RequestHandler):
         nfp.limit = 1 #pairs
         nfp.img = "http://upload.wikimedia.org/wikipedia/en/3/37/Jumpman_logo.svg"
 
+          #nikeFoampositeOne Shoe Instance
+
+        nfo = Shoe()
+        nfo.name = 'Nike Foamposite One'
+        nfo.price = 220 #$
+        nfo.limit = 1 #pairs
+        nfo.img ="http://upload.wikimedia.org/wikipedia/en/3/37/Jumpman_logo.svg"
+
+        #lebron Shoe Instance
+
+        leb = Shoe()
+        leb.name = 'LeBrons'
+        leb.price = 200 #$
+        leb.limit = 1 #pairs
+        leb.img ="http://upload.wikimedia.org/wikipedia/en/3/37/Jumpman_logo.svg"
+
+
+        #kobe Shoe Instance
+
+        kobe = Shoe()
+        kobe.name = 'Kobes'
+        kobe.price = 120 #$
+        kobe.limit = 4 #pairs
+        kobe.img ="http://upload.wikimedia.org/wikipedia/en/3/37/Jumpman_logo.svg"
+
+
 
  #Objects
 class Shoe(object):
