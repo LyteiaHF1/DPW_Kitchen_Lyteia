@@ -75,6 +75,27 @@ class MainHandler(webapp2.RequestHandler):
         #total = price of object * limit of object + sales_tax
         total = obj.price * obj.limit+sales_tax
 
+         finish = '''
+        <div id="finish">
+            <h2>{obj.name}</h2>
+            <img src="{obj.img}" alt="{obj.name}">
+            <ul>
+                <li>
+                    <h4>Price(For 1)</h4>
+                    <p>$ {obj.price} us dollars</p>
+                </li>
+                <li>
+                    <h4>Limit On Pairs</h4>
+                    <p>{obj.limit} pairs</p>
+                </li>
+                <li>
+                    <h4>Total(with Limit)</h4>
+                    <p> $ {total} </p>
+                </li>
+            </ul>
+        </div>
+        '''
+
 
 
  #Objects
