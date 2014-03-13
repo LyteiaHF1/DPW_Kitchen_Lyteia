@@ -62,7 +62,18 @@ class MainHandler(webapp2.RequestHandler):
         self.response.write(page.header())
         self.response.write(page.form())
         if self.request.GET:
-            pass
+            heat = (int(self.request.GET['heat']))
+            print heat
+            self.response.write(self.html(shoes[heat]))
+        self.response.write(page.footer())
+
+
+     #function for html
+    def html(self, obj):
+        #sales tax
+        sales_tax = 6.5
+        #total = price of object * limit of object + sales_tax
+        total = obj.price * obj.limit+sales_tax
 
 
 
