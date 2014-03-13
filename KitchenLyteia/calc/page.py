@@ -35,3 +35,12 @@ class Page():
 </html>
         '''
 
+    def header(self):
+        return self.__header
+
+    def form(self):
+        return self.__form
+
+    def footer(self):
+        return self.__footer
+
