@@ -113,15 +113,23 @@ class Shoe(object):
 #Getter for price
 @property
 def price(self):
-  return self.__price
+    return self.__price
 
 
 #Setter for price
 @price.setter
  def price(self, v):
-   self.__price = v
+    self.__price = v
 
+#Getter for limit
+@property
+def limit(self):
+    return self.__limit
 
+#Setter for limit
+@limit.setter
+def limit(self, v):
+    self.__limit = v
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler)
