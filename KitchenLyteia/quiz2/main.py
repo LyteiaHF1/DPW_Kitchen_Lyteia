@@ -14,13 +14,16 @@ class Sneaker(object):
         @property
         def heat(self):
             return "these are HEAT"
+
         #getter
         @property
         def sport(self):
             return self.__sport
-        #setter for cost
+
+
+        #setter for sport
         @sport.setter
-        def cost(self, v):
+        def sport(self, v):
             self.__sport = v
 
 
@@ -28,3 +31,7 @@ class Sneaker(object):
 class Jordan(Sneaker):
     def __init__(self):
         self.sport = "Basketball"
+        self.heat = "Retro"
+        self.__cost = "$"
+
+        
