@@ -3,6 +3,10 @@ Lyteia
 Quiz 2
 3/13/14
 '''
+#sneakers class 
 class Sneakers(object):
     def __init__(self):
-        pass
+        self.__type  = "Retro or Heat"
+        self.__sport = "Basketball or Running"
+        self.__brand = "Jordan,Lebron,Kobe"
+
