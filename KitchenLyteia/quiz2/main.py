@@ -10,6 +10,19 @@ class Sneaker(object):
         self.__sport = "Basketball or Running"
         self.__brand = "Jordan,Lebron,Kobe"
 
+        #getter
+        @property
+        def heat(self):
+            return "these are HEAT"
+        #getter
+        @property
+        def sport(self):
+            return self.__sport
+        #setter for cost
+        @sport.setter
+        def cost(self, v):
+            self.__sport = v
+
 
 
 class Jordan(Sneaker):
