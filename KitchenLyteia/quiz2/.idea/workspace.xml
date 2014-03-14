@@ -26,7 +26,7 @@
       <file leaf-file-name="main.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="17" selection-start="244" selection-end="244" vertical-scroll-proportion="-0.04477612" vertical-offset="210" max-vertical-offset="930">
+            <state line="56" column="0" selection-start="1200" selection-end="1200" vertical-scroll-proportion="1.1641791" vertical-offset="60" max-vertical-offset="930">
               <folding />
             </state>
           </provider>
@@ -277,9 +277,23 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$USER_HOME$/Desktop/TGFC_Spring/Lab/quiz/schlup_russell_Quiz2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="17" selection-start="568" selection-end="568" vertical-scroll-proportion="0.70278186" vertical-offset="0" max-vertical-offset="683">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/move/quiz/Quiz2/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="24" selection-start="876" selection-end="876" vertical-scroll-proportion="0.73880595" vertical-offset="0" max-vertical-offset="840">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="17" selection-start="244" selection-end="244" vertical-scroll-proportion="-0.04477612" vertical-offset="210" max-vertical-offset="930">
+        <state line="56" column="0" selection-start="1200" selection-end="1200" vertical-scroll-proportion="1.1641791" vertical-offset="60" max-vertical-offset="930">
           <folding />
         </state>
       </provider>
