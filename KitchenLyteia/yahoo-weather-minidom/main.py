@@ -3,7 +3,8 @@
 #March 18,2014
 
 import webapp2
-import xml.etree.ElementTree as ET #libary for working with xml in python
+import urllib2 #need this for requesting info from API this step 2
+from xml.dom import minidom #libary for working with xml in python
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
@@ -23,14 +24,21 @@ class MainHandler(webapp2.RequestHandler):
             result = opener.open(request)
             #print result
             #4 parse the result
-            xmldoc = ET.parse(result)
-            root = xmldoc.getroot()
-            print root.tag
+            xmldoc = minidom.parse(result)
+            self.response.write(xmldoc.getElementsByTagName('title')[2].firstChild.nodeValue)
+            content = '<br/>'
+            list = xmldoc.getElementsByTagName('yweather:forecast')
+            for l in list:
+                content += l.attributes['day'].value
+                content += "  HIGH: " + l.attributes['high'].value
+                content += "  LOW: " + l.attributes['low'].value
+                content += "  CONDITION: " + l.attributes['text'].value
+                content += '  <img src="images/' + l.attributes['code'].value + '.png" width="50" />'
+                #content += '  <img src="http://l.yimg.com/a/i/us/we/52/' + l.attributes['code'].value + '.gif" />'
+                content += '<br />'
+            self.response.write(content)
 
-            self.response.write(root[0][0].text)
-            list = root[0].findall('item')
-            print item
-            
+
 
 
 class Page(object):
