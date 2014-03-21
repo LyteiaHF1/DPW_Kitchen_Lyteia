@@ -3,13 +3,24 @@ Lyteia
 Quiz 3
 3/20/14
 '''
-class Sneaker(object):
+class Sneaker():
     def __init__(self):
         self.__ryear = '2012'
         self._type = 'Jordan'
         self.__color = 'Black'
 
+        self.Color()
 
+    @property
+    def Year(self):
+        return self.__ryear
+
+    @property
+    def Color(self):
+        return self.__color
+
+    def Color():
+        self.__color = 'Blue'
 
 class Jordan(Sneaker):
     def __init__(self):
@@ -31,4 +42,3 @@ class Lebron(Sneaker):
         self.__style = 'Elite X'
         self.condition = 'Deadstock'
 
-      
