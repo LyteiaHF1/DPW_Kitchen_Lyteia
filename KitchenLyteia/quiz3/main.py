@@ -32,13 +32,15 @@ class Jordan(Sneaker):
         self._type = 'Jordan'
         self.__style = 'Retro 11'
         self.condition = 'Very Near Deadstock'
-
+        
+        #call color function
         self.Color()
     #getter
     @property
     def Style(self):
         return self.__style
 
+    #color function  change color
     def Color():
         self.__color = 'Black'
 
@@ -58,5 +60,6 @@ class Lebron(Sneaker):
     def Style(self):
         return self.__style
 
+#color function  change color
     def Color():
         self.__color = 'White'
