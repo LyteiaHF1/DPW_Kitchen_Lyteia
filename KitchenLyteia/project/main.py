@@ -1,7 +1,7 @@
 '''
 Lyteia
 3/18/14
-API Project
+API Project(Youtube/Viemo)
 '''
 import webapp2
 import urllib2
@@ -17,7 +17,7 @@ class MainHandler(webapp2.RequestHandler):
 
             search = self.request.GET['search']
 
-            url = "http://vimeo.com/api/v2"
+            url = "http://vimeo.com/api/v2/video/video_id.xml"
             request = urllib2.Request(url+search)
 
             opener = urllib2.build_opener()
@@ -55,8 +55,6 @@ class FormPage(Page):
         self.__form_close = '</form>'
         self.__inputs = dict()
         self.__input_string = ""
-
-        #{"first_name": "text", "last_name": "text"}
 
      def create_inputs(self):
          for key, value in self.__inputs.iteritems():
