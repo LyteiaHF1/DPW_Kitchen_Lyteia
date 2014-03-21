@@ -32,7 +32,7 @@ class Jordan(Sneaker):
         self._type = 'Jordan'
         self.__style = 'Retro 11'
         self.condition = 'Very Near Deadstock'
-        
+
         #call color function
         self.Color()
     #getter
