@@ -3,32 +3,32 @@
 #March 18,2014
 
 import webapp2
-import xml.etree.ElementTree as ET #libary for working with xml in python
+import urllib2
+#import xml.etree.ElementTree as ET #libary for working with xml in python
+import json
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
         page = FormPage()
-        page.inputs = {'zip': 'text', 'Submit': 'submit'}
+        page.inputs = {'loc': 'text', 'Submit': 'submit'}
         page.create_inputs()
-        self.response.write(page.print_out("Enter your zip"))
+        self.response.write(page.print_out("Enter your City and state"))
 
         if self.request.GET:#if there is info in the url
-            zip = self.request.GET['zip']
-            url = "http://xml.weather.yahoo.com/forecastrss?p=" #where the API is
+            loc = self.request.GET['loc']
+            url = "http://api.openweathermap.org/data/2.5/weather?q=" #where the API is
             #step 1 assemble request
-            request = urllib2.Request(url + zip)#assembles request
+            request = urllib2.Request(url + loc)#assembles request
             #2 use url lib2 to create an object to get the url
             opener = urllib2.build_opener()
             #3 use url to get result-request info from API
             result = opener.open(request)
-            #print result
-            #4 parse the result
-            xmldoc = ET.parse(result)
-            root = xmldoc.getroot()
-            print root.tag
-            self.response.write(root[0][0].text)
-            list = root[0].findall('item')
-            print item
+
+            print "Im Doing It Here"
+            json_doc = json.load(result)
+            print json_doc
+            self.response.write(json_doc['coord']['lat'])
+
 
 class Page(object):
       def __init__(self):

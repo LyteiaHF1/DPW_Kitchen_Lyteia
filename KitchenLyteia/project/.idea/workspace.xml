@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="07cc1bdc-61b0-42cb-83bd-190e094f168a" name="Default" comment="" />
-    <ignored path="yahoo-weather.iws" />
+    <list default="true" id="d7c092b9-c7f0-43d3-8265-9b9b7fa6b5c5" name="Default" comment="" />
+    <ignored path="project.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,14 +19,14 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
-    <favorites_list name="yahoo-weather" />
+    <favorites_list name="project" />
   </component>
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="main.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="14" selection-start="53" selection-end="67" vertical-scroll-proportion="0.20718232" vertical-offset="0" max-vertical-offset="1470">
+            <state line="25" column="0" selection-start="636" selection-end="636" vertical-scroll-proportion="0.5980861" vertical-offset="0" max-vertical-offset="1335">
               <folding />
             </state>
           </provider>
@@ -42,14 +42,16 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
+        <option value="$USER_HOME$/Desktop/TGFC_Spring/Lab/day6/api/main.py" />
         <option value="$PROJECT_DIR$/main.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="22" />
-    <option name="width" value="612" />
-    <option name="height" value="495" />
+    <option name="x" value="373" />
+    <option name="y" value="36" />
+    <option name="width" value="971" />
+    <option name="height" value="760" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -77,22 +79,41 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="yahoo-weather" />
+              <option name="myItemId" value="project" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../json" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../yahoo-weather-minidom" />
     <property name="FullScreen" value="false" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings />
+    </option>
   </component>
   <component name="RunManager">
     <list size="0" />
@@ -100,21 +121,21 @@
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="07cc1bdc-61b0-42cb-83bd-190e094f168a" name="Default" comment="" />
-      <created>1395181875293</created>
-      <updated>1395181875293</updated>
+      <changelist id="d7c092b9-c7f0-43d3-8265-9b9b7fa6b5c5" name="Default" comment="" />
+      <created>1395193401983</created>
+      <updated>1395193401983</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="612" height="495" extended-state="0" />
+    <frame x="373" y="36" width="971" height="760" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32994923" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24947369" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -148,31 +169,31 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="40" selection-start="1790" selection-end="1790" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1470">
+        <state line="6" column="14" selection-start="64" selection-end="64" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="1290">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="10" selection-start="2023" selection-end="2023" vertical-scroll-proportion="0.0" vertical-offset="840" max-vertical-offset="1470">
+        <state line="27" column="46" selection-start="892" selection-end="892" vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="1290">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../polymorphsim/main.py">
+    <entry file="file://$USER_HOME$/Desktop/TGFC_Spring/Lab/day6/api/htm.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="28" selection-start="371" selection-end="1696" vertical-scroll-proportion="0.0" vertical-offset="577" max-vertical-offset="1215" />
+        <state line="11" column="40" selection-start="671" selection-end="671" vertical-scroll-proportion="0.23923445" vertical-offset="0" max-vertical-offset="1620" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../abstract/main.py">
+    <entry file="file://$USER_HOME$/Desktop/TGFC_Spring/Lab/day6/api/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="28" selection-start="304" selection-end="1442" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1005" />
+        <state line="1" column="0" selection-start="1" selection-end="1" vertical-scroll-proportion="0.0234375" vertical-offset="0" max-vertical-offset="640" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="14" selection-start="53" selection-end="67" vertical-scroll-proportion="0.20718232" vertical-offset="0" max-vertical-offset="1470">
+        <state line="25" column="0" selection-start="636" selection-end="636" vertical-scroll-proportion="0.5980861" vertical-offset="0" max-vertical-offset="1335">
           <folding />
         </state>
       </provider>

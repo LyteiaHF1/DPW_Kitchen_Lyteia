@@ -1,34 +1,34 @@
-#Lyteia
-#Day5 Lecture
-#March 18,2014
-
+'''
+Lyteia
+3/18/14
+API Project
+'''
 import webapp2
-import xml.etree.ElementTree as ET #libary for working with xml in python
-
+import urllib2
+from xml.dom import minidom
 class MainHandler(webapp2.RequestHandler):
     def get(self):
         page = FormPage()
-        page.inputs = {'zip': 'text', 'Submit': 'submit'}
+        page.inputs = {'search':'text', 'Submit': 'submit'}
         page.create_inputs()
-        self.response.write(page.print_out("Enter your zip"))
+        self.response.write(page.print_out("Search Artist"))
 
-        if self.request.GET:#if there is info in the url
-            zip = self.request.GET['zip']
-            url = "http://xml.weather.yahoo.com/forecastrss?p=" #where the API is
-            #step 1 assemble request
-            request = urllib2.Request(url + zip)#assembles request
-            #2 use url lib2 to create an object to get the url
+        if self.request.GET:
+
+            search = self.request.GET['search']
+
+            url = "http://vimeo.com/api/v2"
+            request = urllib2.Request(url+search)
+
             opener = urllib2.build_opener()
-            #3 use url to get result-request info from API
             result = opener.open(request)
-            #print result
-            #4 parse the result
-            xmldoc = ET.parse(result)
-            root = xmldoc.getroot()
-            print root.tag
-            self.response.write(root[0][0].text)
-            list = root[0].findall('item')
-            print item
+            xmldoc = minidom.parse(request)
+
+            self.response.write(xmldoc.getElemetsByTagName('videos')[0].firstChild.nodeValue)
+            content = '<br />'
+            list = xmldoc.getElementsByTagName('video')
+            for l in list:
+                content += l.attributes['title'].value
 
 class Page(object):
       def __init__(self):
@@ -74,6 +74,8 @@ class FormPage(Page):
      @inputs.setter
      def inputs(self, dict):
         self.__inputs = dict
+
+
 
 
 app = webapp2.WSGIApplication([
