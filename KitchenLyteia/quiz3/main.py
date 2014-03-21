@@ -20,4 +20,15 @@ class Jordan(Sneaker):
         self.__style = 'Retro 11'
         self.condition = 'Very Near Deadstock'
 
-       
+
+
+class Lebron(Sneaker):
+    def __init__(self):
+        super(Lebron, self).__init__()
+
+        self.__ryear = '2014'
+        self._type = 'Lebron'
+        self.__style = 'Elite X'
+        self.condition = 'Deadstock'
+
+      
