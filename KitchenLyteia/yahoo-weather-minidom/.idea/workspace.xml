@@ -26,7 +26,7 @@
       <file leaf-file-name="main.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="14" selection-start="53" selection-end="67" vertical-scroll-proportion="0.20718232" vertical-offset="0" max-vertical-offset="1470">
+            <state line="28" column="29" selection-start="1143" selection-end="1143" vertical-scroll-proportion="-0.024193548" vertical-offset="435" max-vertical-offset="1470">
               <folding />
             </state>
           </provider>
@@ -47,9 +47,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="228" />
     <option name="y" value="22" />
-    <option name="width" value="612" />
-    <option name="height" value="495" />
+    <option name="width" value="983" />
+    <option name="height" value="753" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -77,7 +78,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -88,10 +88,11 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../json" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../calc" />
     <property name="FullScreen" value="false" />
   </component>
   <component name="RunManager">
@@ -107,14 +108,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="612" height="495" extended-state="0" />
-    <editor active="false" />
+    <frame x="228" y="22" width="983" height="753" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32994923" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2027027" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -148,6 +149,41 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="0" selection-start="1795" selection-end="1795" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1470">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="42" selection-start="230" selection-end="230" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="1470">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="62" selection-start="773" selection-end="773" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="1470">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="76" column="0" selection-start="2675" selection-end="2675" vertical-scroll-proportion="0.0" vertical-offset="834" max-vertical-offset="1470">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="14" selection-start="67" selection-end="67" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="1470">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state line="38" column="40" selection-start="1790" selection-end="1790" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1470">
           <folding />
         </state>
@@ -172,7 +208,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="14" selection-start="53" selection-end="67" vertical-scroll-proportion="0.20718232" vertical-offset="0" max-vertical-offset="1470">
+        <state line="28" column="29" selection-start="1143" selection-end="1143" vertical-scroll-proportion="-0.024193548" vertical-offset="435" max-vertical-offset="1470">
           <folding />
         </state>
       </provider>
