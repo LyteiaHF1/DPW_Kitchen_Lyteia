@@ -27,12 +27,10 @@ class MainHandler(webapp2.RequestHandler):
 
 
 class SearchModel(object):
-"""This Class Does All The Parsing and Getting Data From API
-"""
     def __init__(self,movie):
-		self.__url = 'http://www.omdbapi.com/?t='
-		self.__request = urllib2.Request(self.__url+movie)
-		self.__opener = urllib2.build_opener()
+		 self.__url = 'http://www.omdbapi.com/?t='
+		 self.__request = urllib2.Request(self.__url+movie)
+		 self.__opener = urllib2.build_opener()
 
 
 
