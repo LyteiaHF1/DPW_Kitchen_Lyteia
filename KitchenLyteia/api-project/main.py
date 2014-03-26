@@ -17,20 +17,23 @@ class MainHandler(webapp2.RequestHandler):
 
 	if self.request.GET:#if there is info in the url
             movie = self.request.GET['movie']
-            url = "http://www.omdbapi.com/?t=" #where the API is
+            #url = "http://www.omdbapi.com/?t=" #where the API is
             #step 1 assemble request
-            request = urllib2.Request(url + movie)#assembles request
+            #request = urllib2.Request(url + movie)#assembles request
             #2 use url lib2 to create an object to get the url
-            opener = urllib2.build_opener()
+            #opener = urllib2.build_opener()
             #3 use url to get result-request info from API
-            result = opener.open(request)
+            #result = opener.open(request)
 
 
 class SearchModel(object):
 """This Class Does All The Parsing and Getting Data From API
 """
     def __init__(self,movie):
-		pass
+		self.__url = 'http://www.omdbapi.com/?t='
+		self.__request = urllib2.Request(self.__url+movie)
+		self.__opener = urllib2.build_opener()
+
 
 
 class Page(object):
