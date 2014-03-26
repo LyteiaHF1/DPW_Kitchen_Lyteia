@@ -25,6 +25,14 @@ class MainHandler(webapp2.RequestHandler):
             #3 use url to get result-request info from API
             result = opener.open(request)
 
+
+class SearchModel(object):
+"""This Class Does All The Parsing and Getting Data From API
+"""
+    def __init__(self,movie):
+		pass
+
+
 class Page(object):
 	'''This Class Takes Care Of Basic HTML Componets
 	'''
