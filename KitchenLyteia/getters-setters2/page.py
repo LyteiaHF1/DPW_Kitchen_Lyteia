@@ -1,6 +1,6 @@
 '''
 Lyte
-getters and setters 2
+getters and setters
 '''
 class Page(object):
     def __init__(self):
@@ -12,11 +12,6 @@ class Page(object):
 <body>
 '''
         self.body = ""
-        #self.body = '''
-#<a href ='?fruit=starwberry'>Strawberry</a>
-#<a href = "?fruit=peach">Peach</a>
-#<a href = "?fruit=orange">Orange</a>
-#'''
         self.close = '''
 </body>
 </html>'''

@@ -1,6 +1,6 @@
 '''
 Lyte
-getters and setters 2
+getters and setters
 '''
 import webapp2
 #From document import Class
